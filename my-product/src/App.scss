@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+}
+//Header css->
+.header{
+  display:flex;
+  width:100%;
+  height:70px;
+  background-color: #45a8a2;
+  .nav{
+    flex:70%;
+    align-self: center;
+    color: white;
+    font-size: 19px;
+    font-size: 28px;
+    
+  }
+  .login{
+    flex:30%;
+    display:flex;
+    .btn{
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    height: 30px;
+    color: #006363;
+    background: #dee8b9;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: auto;
+    }
+    .btn:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.date-picker{
+  
+    .btn:hover{
+      cursor: pointer;
+    }
+  
+}
+.Footer{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  height:30%;
+  background-color: #45a8a2;
+  margin-top:3%;
+
+  p{
+    font-size: 20px;
+    color:white;
+  }
+}
+
+.product{
+  flex:70%;
+  margin-top: 4%;
+  overflow: auto;
+  border: 2px solid black;
+  position: relative;
+  background: beige;
+    div{ 
+      width: 33%;
+    float: left;
+   
+    height: 135px;
+  img{
+    width: 82%;
+    // background-color: blue;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 100px;
+
+  }
+  p{
+    // background: white;
+    margin-top: -2%;
+    position: absolute;
+    margin-left: 3%;
+    width: 27%;
+    
+
+  }
+  p:hover{
+    cursor: pointer;
+  }
+    }
+}
+.loading{
+flex:70%;
+align-self: center;
+font-weight: 700;
+}
+
+.likesection{
+  flex:30%;
+  background-color: red;
+  overflow:auto;
+}
+.wrap{
+  display: flex;
+  height: 400px;
+}
+.date-picker{
+  flex:30%;
+ 
+  p{
+    font-size:18px;
+    font-weight: 700;
+  }
+  button{
+    border: 2px solid cadetblue;
+    margin-top: 8%;
+    height: 10%;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 700;
+    :hover{
+      cursor: pointer;
+    }
+  }
+}
+.react-calendar{
+  overflow: auto;
+  height: 247%;
+  button{
+    height: 35px !important;
+    }
+}
+
+.date-detector{
+  padding: 12%;
+  height: 30%;
+}
+
+//Respnsive design -->
+@media screen and (max-width: 360px){
+  .date-detector .react-calendar{
+  margin-left: 2% !important;
+}
+}
+@media screen and (max-width: 924px){
+  .likesection {
+    margin-top: 5%;}
+  .wrap{
+    flex-direction: column;
+    height: 1000px;
+  }
+  .date-picker{
+    .btn{
+      padding: 7%;
+    }
+  }
+  .date-detector{
+    height: 42% ;
+    padding:0px;
+  .react-calendar{
+    margin-left: 9%;
+    height: 188%;
+    border: 6px solid cadetblue;
+    margin-top: 9px;
+
+  };
+ 
+  
+}
+.Footer{
+  margin-top:48%;
+}
+.header .login .btn{
+  width:41%;
+}
+
+}
