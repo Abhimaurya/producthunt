@@ -1,8 +1,6 @@
 import Footer from './Footer/footer'
 import Header  from './Header/header'
 import ProductView from './productView/product'
-// import LikeSection from './productView/LikeSection'
-// import LikeList from './LikeList/Like'
 import React, { Component } from 'react';
 
 class ProductHunt extends Component {
@@ -17,10 +15,11 @@ class ProductHunt extends Component {
     render(){
         return(
             <React.Fragment>
+                {/* Header section */}
                 <Header/>
+                {/* Product view section */}
                 <ProductView visible={this.state.visible} visible={this.callback}/>
-                {/* <LikeSection/>
-                <LikeList/> */}
+                {/* Footer section */}
                 <Footer/>
             </React.Fragment>
         
