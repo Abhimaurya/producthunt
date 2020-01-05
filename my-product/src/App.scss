@@ -15,6 +15,8 @@
     font-size: 28px;
     
   }
+
+ 
   .login{
     flex:30%;
     display:flex;
@@ -34,6 +36,7 @@
     }
   }
 }
+//Header Css End
 
 .date-picker{
   
@@ -42,6 +45,7 @@
     }
   
 }
+//Footer css 
 .Footer{
   display:flex;
   width:100%;
@@ -57,6 +61,8 @@
   }
 }
 
+//Footer CSS End
+//Product rendering  CSS
 .product{
   flex:70%;
   margin-top: 4%;
@@ -78,12 +84,14 @@
 
   }
   p{
+    background: #45a8a2;
     // background: white;
     margin-top: -1.5%;
     position: absolute;
     margin-left: 3%;
     width: 27%;
-    height:8%
+    height:8%;
+    border-radius:50%;
     
 
   }
@@ -92,17 +100,39 @@
   }
     }
 }
+//Product CSS rendering End-->
+//Before rendering post css
 .loading{
 flex:70%;
 align-self: center;
 font-weight: 700;
 }
-
+//End
+//Right most section CSS for Liked product by user
 .likesection{
+  overflow-x:hidden;
   flex:30%;
-  background-color: red;
+  background-color: #c9cf78;
   overflow:auto;
+  margin-left: 1%;
+  margin-top: 1%;
+  p{
+    color: darkolivegreen;
+    font-style: oblique;
+    font-size: 18px;
+    font-weight: 700;
+  };
+  div{
+    
+    img{
+      width: 60%;
+      height: 86px;
+      border: 4px solid #a1a754;
+      background: antiquewhite;
+    }
+  }
 }
+//Right most section CSS for Liked product by user End
 .wrap{
   display: flex;
   height: 400px;
@@ -126,6 +156,7 @@ font-weight: 700;
     }
   }
 }
+//React Calender css
 .react-calendar{
   overflow: auto;
   height: 247%;
@@ -133,13 +164,35 @@ font-weight: 700;
     height: 35px !important;
     }
 }
+//End
 
 .date-detector{
   padding: 12%;
   height: 30%;
 }
 
-//Respnsive design -->
+.likebtn{
+  border-radius: 50%;
+}
+.noproduct{
+  font-size: 22px;
+  color: darkblue;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//zoom the liked secion image
+.zoom {
+   padding: 5px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+//Respnsive design  start-->
 @media screen and (max-width: 360px){
   .date-detector .react-calendar{
   margin-left: 2% !important;
@@ -167,14 +220,27 @@ font-weight: 700;
     margin-top: 9px;
 
   };
- 
-  
+
 }
-.Footer{
-  margin-top:48%;
+.product div p {
+height: 5%;
 }
+
 .header .login .btn{
   width:41%;
 }
 
 }
+
+@media screen and (max-width: 375px){
+  .date-detector .react-calendar{
+  margin-left: 3% !important;
+}
+}
+
+@media screen and (max-width: 768px){
+  .date-detector .react-calendar{
+  margin-left: 3% !important;
+}
+}
+//Responsie design End-->

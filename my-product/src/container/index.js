@@ -18,7 +18,7 @@ class ProductHunt extends Component {
                 {/* Header section */}
                 <Header/>
                 {/* Product view section */}
-                <ProductView visible={this.state.visible} visible={this.callback}/>
+                <ProductView />
                 {/* Footer section */}
                 <Footer/>
             </React.Fragment>
